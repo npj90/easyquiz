@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<title>Quiz</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+	<body>
+    <div id="quizContainer" class="container">
+      <div class="title">Easy Quiz</div>
+      <div id="question" class="question">Who is the best racer?</div><!--placeholder QA-->
+	      <label class="option"><input class="radio" type="radio" name="option" value="1"/><span id="opt1">Sam</span></label>
+	      <label class="option"><input class="radio" type="radio" name="option" value="2"/><span id="opt2">Steve</span></label>
+	      <label class="option"><input class="radio" type="radio" name="option" value="3"/><span id="opt3">Bill</span></label>
+	      <label class="option"><input class="radio" type="radio" name="option" value="4"/><span id="opt4">Mike</span></label>
+      <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next</button>
+    </div><!--end quizContainer-->
+
+    <div id="result" class="container result" style="display:none;">
+			<!--<button id="restart" class="restart-btn" onclick="loadQuestion();">Restart</button>-->
+    </div>
+    <script src="questions.js"></script>
+    <script src="quiz-script.js"></script><!--end script links-->
+	</body>
+</html>
